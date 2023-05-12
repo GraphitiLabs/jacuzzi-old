@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
+
 const ConnectWallet: React.FC = () => {
     const [address, setAddress] = useState<string>('');
-    const [isEthereumAvailable, setIsEthereumAvailable] =
-        useState<boolean>(false);
+    const [isEthereumAvailable, setIsEthereumAvailable] = useState<boolean>(false);
 
     useEffect(() => {
         setIsEthereumAvailable(

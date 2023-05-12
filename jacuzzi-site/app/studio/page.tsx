@@ -5,11 +5,10 @@ import StrategyWindow from '@/components/StrategyWindow';
 
 export default function Home() {
     const fileTreeItems = [
-        <StrategyInfoButton/>
-
+        <StrategyInfoButton key="placeholder"/>
     ];
 
-    const handleFileItemClick = item => {
+    const handleFileItemClick = (item: any) => {
         console.log('Clicked item:', item);
     };
 
